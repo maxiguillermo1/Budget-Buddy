@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/stylesheet-sign-up.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+    <link rel="icon" type="image/x-icon" href="images/budget-management-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="Budget Buddy"  />
+    <html lang="en">
+    <title>Sign Up to Budget Buddy</title>
+  </head>
+  <body>
+    <main class="centro" id="main-container-sign-up">
+      <h2 class="title">Sign Up to Budget Buddy</h2>
+      <form class="form" id="sign-up-form" action="account.html" method="POST">
+        <div class="input-field">
+          <i class="fas fa-user">
+              <span class="material-symbols-outlined">
+                  account_circle
+              </span>
+          </i>
+          <input type="text" id="name" required placeholder="First Name"><br>
+        </div>
+        
+        <div class="input-field">
+          <i class="fas fa-user">
+              <span class="material-symbols-outlined">
+                  person
+              </span>
+          </i>
+          <input type="text" id="surname" required placeholder="Last Name"><br>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-user">
+              <span class="material-symbols-outlined">
+                  email
+              </span>
+          </i>
+          <input type="email" id="useremail" required placeholder="Email"><br>
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-user">
+              <span class="material-symbols-outlined">
+                  lock
+              </span>
+          </i>
+          <input type="password" id="pswd" required placeholder="Password"><br>
+        </div>
+
+        <input type="checkbox" id="condiciones" required>
+        <p>I have read and accept the terms of use</p><br>
+        <input type="submit" value="Sign Up" id="send-values" class="btn solid">
+        <input type="reset" value="Delete" id="reset-values" class="btnsolid"><br>
+        
+        <p class="social-text">or sign up with</p>
+
+          <div class="social-media">
+            <a id="facebook-link" class="social-icon">
+              <img src="images/facebook-logo.png">
+            </a>
+            <a id="google-link" class="social-icon">                  
+              <img src="images/google-logo.png">
+            </a>
+          </div>
+
+          <div class="txt">
+            <a id="go-to-log-in">Already have an account?</a>
+          </div>
+      </form><br>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script-sign-up.js"></script>
+  </body>
+</html>

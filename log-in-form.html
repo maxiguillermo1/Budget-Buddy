@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/stylesheet-log-in.css">
+    <link rel="stylesheet" href="style/stylesheet-change-theme-button.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+    <link rel="icon" type="image/x-icon" href="images/budget-management-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="Budget Buddy"  />
+    <html lang="en">
+    <title>Log In to Budget Buddy</title>
+  </head>
+
+  <body>
+    <main class="centro" id="main-container-log-in">
+        <h2 class="title">Log In to Budget Buddy</h2>
+        <form class="form" id="log-in-form">
+          <div class="input-field">
+            <i class="fas fa-user">
+                <span class="material-symbols-outlined">
+                    email
+                </span>
+            </i>
+            <input type="email" id="useremail" required placeholder="E-mail"><br>
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-user">
+                <span class="material-symbols-outlined">
+                    lock
+                </span>
+            </i>
+            <input type="password" id="pswd" required placeholder="Password"><br>
+          </div>
+          
+          <input type="submit" value="Log in" class="btn solid" id="send-values"><br>
+
+          <p class="social-text">or log in with</p>
+          <div class="social-media">
+            <a id="facebook-link" class="social-icon">
+                <img src="images/facebook-logo.png">
+            </a>
+            <a id="google-link" class="social-icon">
+                <img src="images/google-logo.png">
+            </a>  
+          </div>
+
+          <div class="txt">
+            <a id="go-to-sign-up">Don't have an account?</a>
+          </div>
+        </form><br>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script-log-in.js"></script>
+  </body>
+</html>
+  

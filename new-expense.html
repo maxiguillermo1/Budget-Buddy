@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/stylesheet-regions.css">
+        <link rel="stylesheet" href="style/stylesheet-home.css">
+        <link rel="stylesheet" href="style/stylesheet-new-item.css">
+        <link rel="stylesheet" href="style/stylesheet-popup.css">
+        <link rel="stylesheet" href="style/stylesheet-change-theme-button.css">
+        <link rel="icon" type="image/x-icon" href="images/budget-management-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <meta name="Budget Buddy"  />
+        <html lang="en">
+        <title>Budget Buddy</title>
+    </head>
+
+    <body>
+      <header>
+        <div class="top" id="header">
+          <img id="budget-logo" src="images/budget-management-logo.png" alt="Budget Buddy Logo">
+          <h1 id="budget-brand-name">Budget Buddy</h1>
+          <input type="search" placeholder="Search" id="searchbar">
+          <img id="notification-bell" src="images/notifications.png" alt="Notifications bell">
+          <img id="profile-picture" src="images/empty-profile.png" alt="Profile Picture">
+        </div><br>
+        <div class="popup" id="profile-popup">
+          <div class="container" id="popup-container"><br>
+            <button class="account" id="account-text">Account</button><br>
+            <button class="log-out" id="log-out-text">Log Out</button>
+          </div>
+        </div>
+      </header>
+
+      <nav class="left" id="menu-container">
+        <div class="menu">
+          <div id="option1">
+              <img id="home-icon" src="images/home.png" alt="Home">
+              <div id="home">Home</div>
+          </div><br>
+          <div id="option2">
+              <img id="budgets-icon" src="images/library.png" alt="Budgets">
+              <div id="budgets">Budgets</div>
+          </div><br>
+          <div id="option3">
+              <img id="create-icon" src="images/create.png" alt="New expense">
+              <div id="create">New expense</div>
+          </div><br>
+          <div id="option4">
+              <img id="settings-icon" src="images/settings.png" alt="Settings">
+              <div id="settings">Settings</div>
+          </div><br>
+          <span id='paypal-login-button'></span> 
+          <div class=change-theme-popup id="change-theme">
+            <div class="container-light" id="change-theme-container"><br>
+              <label class="switch" id="switch-dark-mode">
+                <input type="checkbox">
+                <span class="sliding-button" id="sliding-circle"><div id="circle"></div></span>
+              </label>
+              <div class="light-theme-text">Light Theme</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+        
+      <main class="right" id="main-container">
+          <div class="content">
+              <form id="new-expense"><br>
+                  <h1 id="expense-title">Add your expense</h1>
+                  <div class="expense-name">
+                    <h2 class="subtitles">Expense name</h2><br>
+                    <input type="text" maxlength="15" id="expensenametext" placeholder=" Expense name" required>
+                  </div>
+                  <div class="expense-amount">
+                      <h2 class="subtitles">Expense amount</h2><br>
+                      <p id="dollars">$</p>
+                      <input type = "number" step="0.01" min=0 max=1000000000 id="expensequantity" placeholder=" Amount" required>
+                      <button type="button" id="scanReceiptButton">Upload Receipt</button>
+                      <input type="file" id="inputImage" accept="image/*" style="display:none;"> <!-- Input for selecting an image file -->
+                  </div>
+                  <div class="select-budget">
+                      <h2 class="subtitles">Select a budget</h2><br>
+                      <select name="userbudgets" id="userbudgets" required></select>
+                  </div>
+                  <div class="reset-expense">
+                    <h2 class="subtitles">Set a reset period</h2>
+                    <h3 class="info">(If the expense is recurrent)</h3><br>
+                    <select name="reset-period" id="resetperiod" required>
+                      <option value="never">Never</option>
+                      <option value="daily">Daily</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                      <option value="yearly">Yearly</option>
+                      <option value="custom-date">Custom Date</option>
+                    </select>
+                    <div class="resetdate">
+                      <h3 id="resetCustomHeader" style="display: none;">Reset on the <input type="number" min="1" max="31" id="resetdate" name="days" style="display: none;"> day of each month</h3><br>                                                           
+                    </div>
+                  </div>
+                  <input type="submit" value="Save" id="send">
+                  <input type="reset" value="Reset" id="cancel">          
+              </div>
+          </div>
+      </main>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script> <!-- Links to an external OCR library -->
+      <script src="script/script-reset-item.js"></script>
+      <script src="script/script-new-expense.js"></script>
+      <script src="script/script-popup.js"></script>
+      <script src="script/script-menu.js"></script>
+      <script src="script/script-dark-mode.js"></script>
+      <script src='https://www.paypalobjects.com/js/external/api.js'></script>
+      <script src="script/script-paypal.js"></script>
+    </body>
+</html>

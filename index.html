@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/stylesheet-regions.css">
+  <link rel="stylesheet" href="style/stylesheet-index.css">
+  <link rel="icon" type="image/x-icon" href="images/budget-management-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="Budget Buddy"  />
+  <html lang="en">
+  <title>Budget Buddy</title>
+</head>
+
+  
+<body>
+  <header>
+    <div class="top" id="header">
+      <img id="budget-logo" src="images/budget-management-logo.png" alt="Budget Buddy Logo">
+      <h1 id="budget-brand-name">Budget Buddy</h1>
+      <div id="log-in" class="register"><a>Log In</a></div>
+      <div id="sign-up" class="register"><a>Sign Up</a></div>
+    </div>
+  </header>
+  
+  <nav class="left" id="menu-container">
+      <div class="menu">
+          <div id="option1">
+              <img id="home-icon" src="images/home.png" alt="Home">
+              <div id="home">Home</div>
+          </div><br>
+          <div id="option2">
+              <img id="budgets-icon" src="images/library.png" alt="Budgets">
+              <div id="budgets">Budgets</div>
+          </div><br>
+          <div id="option3">
+              <img id="create-icon" src="images/create.png" alt="New expense">
+              <div id="create">New expense</div>
+          </div><br>
+          <div id="option4">
+              <img id="settings-icon" src="images/settings.png" alt="Settings">
+              <div id="settings">Settings</div>
+          </div><br>
+          <span id='paypal-login-button'></span> 
+      </div>
+  </nav>
+
+  <main class="right" id="main-container">
+    <div class="index-container">
+      <img id="budget-logo-main" src="images/budget-management-logo-smaller.png" alt="Budget Buddy Logo">
+      <h2 id="title">Budget Buddy</h2>
+      <h2 id="intro-text">The tool you need to keep track of your money</h2>
+    </div>
+    <div class="budget-buddy-description">
+      <div id="budgets-index">
+        <img id="budgets-index-image" src="images/budgets-index.png" alt="Budgets image">
+        <div id="budgets-index-text">
+          <h2 class="feature">Create budgets</h2>
+          <h3 >Budget Buddy lets you create budgets across multiple categories. <br>You can also set a reset period for recurrent budgets!</h3>
+        </div>
+      </div>
+      <div id="expenses-index">
+        <img id="expenses-index-image" src="images/expenses-index.png" alt="Expenses image"><br>
+        <div id="expenses-index-text">
+          <h2 class="feature">Add expenses</h2>
+          <h3 >Budget Buddy automatically updates all of your budgets when a new expense gets added.</h3>
+        </div>
+      </div><br>
+      <div id="notifications-index">
+        <img id="notifications-index-image" src="images/notifications.png" alt="Notifications image">
+        <div id="notifications-index-text">
+          <h2 class="feature">Get notified</h2>
+          <h3 >Budget Buddy notifies you when you are close to the budgetted amount.</h3>
+        </div>
+      </div>
+      <div id="paypal-index">
+        <img id="paypal-index-image" src="images/paypal.png" alt="PayPal icon image">
+        <div id="paypal-index-text">
+          <h2 class="feature">Link with PayPal</h2>
+          <h3 >Budget Buddy can also be linked with your PayPal account so that you don't have to enter your PayPal expenses manually.</h3>
+        </div>
+      </div>
+      <h2 id="get-started">Get started today!</h2>
+      <button id="sign-up-button" type="button">Sign Up</button>
+    </div>
+  </main>
+  
+  <div class="bottom" id="footer">
+    <footer>
+      <a id="go-to-sign-up" class="ad">Not registered yet? Join today!</a>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='https://www.paypalobjects.com/js/external/api.js'></script>
+  <script src="script/script-paypal.js"></script>
+  <script src="script/script-index.js"></script>
+</body>
+</html>
